@@ -1,0 +1,18 @@
+extends ./layout/index
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src=`/img/destinos_${resultado.imagen}_ln.jpg`, alt="imagen viaje", class="img-fluid")
+            .col-md-7
+                h1=resultado.titulo
+                p 
+                    |#{resultado.fecha_ida}- #{resultado.fecha_vuelta}
+
+                p 
+                    |#{resultado.disponibles} lugares disponibles
+
+                p   
+                    |#{resultado.descripcion}
+                
+
